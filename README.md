@@ -3,7 +3,9 @@
 #### Setup:
 * Download & Install Java
 * Download & Install latest version of maven
+
 To utilize AWS Services
+
 * Create a file with the contents below called `credentials` and store it in `~/.aws/credentials`
 
 ```
