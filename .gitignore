@@ -1,0 +1,10 @@
+# Test results
+target/
+
+# Eclipse STS
+**/.settings/**
+**/.classpath
+**/.project
+
+# OSX
+**/.DS_Store
