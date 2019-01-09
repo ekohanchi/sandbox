@@ -19,6 +19,7 @@ import com.amazonaws.services.dynamodbv2.model.KeySchemaElement;
 import com.amazonaws.services.dynamodbv2.model.KeyType;
 import com.amazonaws.services.dynamodbv2.model.ListTablesResult;
 import com.amazonaws.services.dynamodbv2.model.ProvisionedThroughput;
+import com.amazonaws.services.dynamodbv2.model.ScalarAttributeType;
 
 public class Dynamo {
 	private Regions clientRegion = Regions.US_WEST_2;
@@ -47,7 +48,9 @@ public class Dynamo {
 	private void createOrderDataTable() {
 		Reporter.log("Creating new table: " + tableName + " in dynamodb");
 		List<AttributeDefinition> attributeDefinitions = new ArrayList<>();
-		attributeDefinitions.add(new AttributeDefinition().withAttributeName(PRIMARYKEY).withAttributeType("S"));
+		//attributeDefinitions.add(new AttributeDefinition().withAttributeName(PRIMARYKEY).withAttributeType("S"));		
+		attributeDefinitions.add(new AttributeDefinition(PRIMARYKEY, ScalarAttributeType.S));
+
 		List<KeySchemaElement> keySchema = new ArrayList<>();
 		keySchema.add(new KeySchemaElement().withAttributeName(PRIMARYKEY).withKeyType(KeyType.HASH));
 
