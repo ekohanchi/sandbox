@@ -39,6 +39,22 @@ public class Dynamo {
 	}
 	
 	private void connectToService() {
+		/*
+		Method 1 - profile targeting in aws credentials file 
+		-------------------------------------------------------
+		ProfilesConfigFile profileConfigFile = new ProfilesConfigFile();
+		AWSCredentials awsCredentials;
+		awsCredentials = profileConfigFile.getCredentials("devprofile");
+		BasicAWSCredentials awsCreds = new BasicAWSCredentials(awsCredentials.getAWSAccessKeyId(), awsCredentials.getAWSSecretKey());
+		dynamoDBClient = AmazonDynamoDBClientBuilder.standard().withCredentials(new AWSStaticCredentialsProvider(awsCreds)).withRegion(clientRegion).build();
+		
+		Method 2 - profile targeting in aws credentials file 
+		-------------------------------------------------------
+		AWSCredentialsProvider awsCredentialsProvider;
+		awsCredentialsProvider = new ProfileCredentialsProvider("devprofile");
+		dynamoDBClient = AmazonDynamoDBClientBuilder.standard().withCredentials(awsCredentialsProvider).withRegion(clientRegion).build();
+		 */
+		
 		dynamoDBClient = AmazonDynamoDBClientBuilder.standard().withRegion(clientRegion).build();
 		dynamoDB = new DynamoDB(dynamoDBClient);
 
