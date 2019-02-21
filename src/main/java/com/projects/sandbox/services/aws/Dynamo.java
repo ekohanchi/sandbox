@@ -34,7 +34,7 @@ public class Dynamo {
 		/* If table doesn't exist then create it, generally just the first time. */
 		if (!doesTableExist(tableName)) {
 			Reporter.log("Table: " + tableName + " does not exist");
-			createOrderDataTable();
+			createTable();
 		}
 	}
 	
@@ -61,7 +61,7 @@ public class Dynamo {
 		dynamoDB.getTable(tableName);
 	}
 	
-	private void createOrderDataTable() {
+	private void createTable() {
 		Reporter.log("Creating new table: " + tableName + " in dynamodb");
 		List<AttributeDefinition> attributeDefinitions = new ArrayList<>();
 		//attributeDefinitions.add(new AttributeDefinition().withAttributeName(PRIMARYKEY).withAttributeType("S"));		
