@@ -11,7 +11,7 @@ public class UrlParsing {
 	 */
 	
 	public static void main(String[] args) {
-
+		
 	}
 	
 	private static String urlParsing1() {
@@ -25,5 +25,4 @@ public class UrlParsing {
 		
 		return params;
 	}
-
 }
