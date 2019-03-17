@@ -14,7 +14,7 @@ public class UrlParsing {
 		
 	}
 	
-	private static String urlParsing1() {
+	public static String urlParsing1() {
 		String mainUrl = "";
 		
 		return mainUrl;
