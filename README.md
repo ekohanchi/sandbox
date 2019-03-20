@@ -114,12 +114,12 @@ quickSort(arr[], low, high)
 * [Dijkstra's shortest path Algorithm](https://www.geeksforgeeks.org/dijkstras-shortest-path-algorithm-in-java-using-priorityqueue/)
 * [A* Search Algorithm](https://www.geeksforgeeks.org/a-search-algorithm/)
 * [NP-complete problems](https://www.britannica.com/science/NP-complete-problem)
- * [Travelling Salesman Problem](https://www.geeksforgeeks.org/travelling-salesman-problem-set-1/)
- * [Knapsack Problem](https://www.geeksforgeeks.org/0-1-knapsack-problem-dp-10/)
+  * [Travelling Salesman Problem](https://www.geeksforgeeks.org/travelling-salesman-problem-set-1/)
+  * [Knapsack Problem](https://www.geeksforgeeks.org/0-1-knapsack-problem-dp-10/)
 * Operating Systems
- * [Java Concurrency](https://www.vogella.com/tutorials/JavaConcurrency/article.html)
- * [mutex-vs-semaphore](https://www.geeksforgeeks.org/mutex-vs-semaphore/)
- * [deadlock and livelock](https://www.geeksforgeeks.org/deadlock-starvation-and-livelock/) - [Avoiding them](https://www.geeksforgeeks.org/deadlock-prevention/)
+  * [Java Concurrency](https://www.vogella.com/tutorials/JavaConcurrency/article.html)
+  * [mutex-vs-semaphore](https://www.geeksforgeeks.org/mutex-vs-semaphore/)
+  * [deadlock and livelock](https://www.geeksforgeeks.org/deadlock-starvation-and-livelock/) - [Avoiding them](https://www.geeksforgeeks.org/deadlock-prevention/)
 
 ## Setup to use services:
 * Download & Install Java
