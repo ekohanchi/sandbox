@@ -3,7 +3,9 @@ package com.projects.sandbox.practice.leetcode;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.HashMap;
+import java.util.Iterator;
 import java.util.List;
+import java.util.Map;
 
 public class LeetCode {
 	public static void main(String[] args) {
@@ -96,6 +98,28 @@ public class LeetCode {
         } else {
             return false;
         }
+    }
+    
+    /**
+     * Learnings - Level: Easy
+     * - 2 conditions can be provided to for loop
+     */
+    public int[] twoSum(int[] nums, int target) {
+        int[] result = new int[2];
+        
+        boolean found = false;
+        for(int i=0; i<nums.length && !found; i++) {
+            int potential = nums[i];
+            for(int j=i+1; j<nums.length; j++) {
+                if(nums[j] == (target - potential)) {
+                    result[0] = i;
+                    result[1] = j;
+                    found = true;
+                    break;
+                }
+            }
+        }
+        return result;
     }
     
 	

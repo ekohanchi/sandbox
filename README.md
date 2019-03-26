@@ -33,10 +33,10 @@
 * Hashtable stores key/value pair in hash table.
 * In Hashtable we specify an object that is used as a key, and the value we want to associate to that key. The key is then hashed, and the resulting hash code is used as the index at which the value is stored within the table.
 * Common method calls - `Hashtable<Integer, String> ht = new Hashtable<Integer, String>();`
- * ht.contains("value");
- * ht.containsKey("keyValue");
- * ht.containsValue(value);
- * ht.entrySet();
+	* ht.contains("value");
+	* ht.containsKey("keyValue");
+	* ht.containsValue(value);
+	* ht.entrySet();
 
 ```java
 // creating a hash table 
@@ -109,7 +109,15 @@ quickSort(arr[], low, high)
 }
 ```
 
+### Trees
+#### Traversal
+* Preorder - root, left, right
+* Inorder - left, root, right
+* Postorder - left, right, root
+* Levelorder - root, left -> right level 1...x
+
 ### General Links
+* [Implementing a binary tree in java](https://www.baeldung.com/java-binary-tree)
 * [Guava Library in Java](https://www.geeksforgeeks.org/guava-library-java/)
 * [Dijkstra's shortest path Algorithm](https://www.geeksforgeeks.org/dijkstras-shortest-path-algorithm-in-java-using-priorityqueue/)
 * [A* Search Algorithm](https://www.geeksforgeeks.org/a-search-algorithm/)
