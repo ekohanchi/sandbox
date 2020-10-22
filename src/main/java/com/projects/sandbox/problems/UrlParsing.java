@@ -20,7 +20,7 @@ public class UrlParsing {
 		return mainUrl;
 	}
 	
-	public static HashMap<String, String> urlPasing2() {
+	public static HashMap<String, String> urlParsing2() {
 		HashMap<String, String> params = new HashMap<String, String>();
 		
 		return params;
